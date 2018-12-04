@@ -35,7 +35,7 @@ public class DatabaseLoader implements ApplicationRunner {
                 new User("user1", "pass1", new String[]{"ROLE_USER"}),
                 new User("user2", "pass2", new String[]{"ROLE_USER"})
         );
-        users.saveAll(administrators);
+        users.save(administrators);
 
         List<String> administratorNames = new ArrayList<>();
         for (User administrator : administrators) {
